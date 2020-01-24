@@ -1,5 +1,6 @@
 # ddolder.github.io
 <htlm>
 <head>
-<title><b><fontface="broadway">
- ViewBuilder</font></b> </title>
+<title><b><fontface="broadway"> ViewBuilder</font></b> </title>
+<head/>
+<htlm>
