@@ -1,6 +1,6 @@
 <htlm>
 <head>
-<title><b><font face="broadway"> ViewBuilder </font> </b> </title>
+<title> <b> ViewBuilder </b> </title>
 </head>
 <body> Background </body>
 </htlm>
