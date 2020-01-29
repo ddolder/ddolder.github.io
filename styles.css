@@ -2,7 +2,8 @@
 body {
   background-image: url("Background.jpg");
     background-repeat: no-repeat;
-  background-size: auto; 
+  background-size: auto;
+  background-blend-mode: lighten;
   font-family: sans-serif, arial;
   font-size: 14px;
   text-align: center;
