@@ -1,6 +1,6 @@
 
 body {
-   background-image: url("Background.jpg");
+   background-image: src("Background.jpg");
   font-family: sans-serif, arial;
   font-size: 14px;
   text-align: center;
