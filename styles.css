@@ -2,7 +2,7 @@
 body {
   background-image: url("Background.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   font-family: sans-serif, arial;
   font-size: 14px;
   font-weight: bold;
