@@ -5,7 +5,7 @@ body {
   background-color: rgb(240,240,240);
   font-family: arial, sans-serif;
   font-size: 14px;
-  text-align: center; 
+  text-align: center;
 }
 
 /* Applies to all <h1>...</h1> elements. */
@@ -16,8 +16,4 @@ h1 {
   text-align: center;
 }
 
-/* Applies to all elements with <... class="someclass"> specified. */
-.someclass { color: red; }
 
-/* Applies to the element with <... id="someid"> specified. */
-#someid { color: green; }
