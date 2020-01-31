@@ -3,7 +3,7 @@ body {
   background-image: url("Fondo.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;  height: 100%; weight:100%
+  background-size: cover;  height: 100%; weight:100%; margin: 2%;
   font-family: sans-serif, arial;
   font-size: 14px;
   font-weight: bold;
