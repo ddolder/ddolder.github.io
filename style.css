@@ -3,11 +3,7 @@ body {
   background-image: url("Fondo.jpg");
   background-position: center;
   background-size: cover;
-  font-family: sans-serif, arial;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-}
+ }
 
 h1 {
  font-family: impact, sans-serif;
