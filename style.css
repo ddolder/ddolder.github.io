@@ -2,7 +2,7 @@
 body {
   background-image: url("Fondo.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: auto;
  }
 
 h1 {
