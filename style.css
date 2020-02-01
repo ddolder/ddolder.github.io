@@ -16,4 +16,7 @@ h1 {
   text-shadow: 1px 1px #2A1A7A;
 }
 
-
+input[type=text] {
+  background-color: #3CBC8D;
+  color: white;
+}
