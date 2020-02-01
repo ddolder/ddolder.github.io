@@ -29,14 +29,13 @@ h1 {
     font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
     position: absolute;
     min-width: 160px;
-    background-color: #ffffff;
+    background-color: #ebca9d;
     box-shadow: 0px 8px 16px 0px;
     text-align: center;
 }
 
 .block {
-    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
-    width: 40%;
+      width: 40%;
     margin-top: 6%;
     margin-bottom: auto;
     margin-left: auto;
