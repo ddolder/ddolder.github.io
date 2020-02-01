@@ -17,6 +17,5 @@ h1 {
 input[type=text] {
   background-position: center;
   background-color: marron;
-  color: white;
-  text-align: center;
+  text-align: right;
 }
