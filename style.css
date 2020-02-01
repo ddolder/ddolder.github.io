@@ -2,6 +2,7 @@
 body {
   background-image: url("Fondo.jpg");
   background-position: center;
+  weight:100%
   background-repeat: no-repeat;
   background-size: auto;
   font-family: sans-serif, arial;
