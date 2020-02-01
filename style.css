@@ -17,3 +17,9 @@ input[type=text] {
   color: white;
   text-align: left;
 }
+
+
+.right {
+  padding: 10px;
+    grid-area: right;
+}
