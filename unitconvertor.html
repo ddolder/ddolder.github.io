@@ -1,56 +1,50 @@
 <html>
-          <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
       <body>
-<div class="block">
-         <h1><br><br>Unit Convertor</h1>
-    <br>
-   <p>
-            <input type="text" placeholder="Enter a number" id="inputNumber"/>
-        </p>
+        <div class="block">
+            <h1><br><br>Unit Convertor</h1>
+            <br>
+             <p>
+                 <input type="text" placeholder="Enter a number" id="inputNumber"/>
 
-        <p>
+             <p>
+                 Input Units:
+                 <div id="dropdown">
+                    <select id="Input Units">
+                        <option value="Inches">Inches</option>
+                        <option value="Feet">Feet</option>
+                        <option value="Yards">Yards</option>
+                        <option value="Miles">Miles</option>
+                        <option value="Millimeters">Millimeters</option>
+                        <option value="Centimeters">Centimeters</option>
+                        <option value="Meters">Meters</option>
+                        <option value="Kilometers">Kilometers</option>
+                    </select>
+                </div>
 
-            Input Units:
-         <div id="dropdown">
-                <select id="Input Units">
-                    <option value="Inches">Inches</option>
-                    <option value="Feet">Feet</option>
-                    <option value="Yards">Yards</option>
-                    <option value="Miles">Miles</option>
-                    <option value="Millimeters">Millimeters</option>
-                    <option value="Centimeters">Centimeters</option>
-                    <option value="Meters">Meters</option>
-                    <option value="Kilometers">Kilometers</option>
-                </select>
-            </div>
+            <p>
+                Output Units:
+                <div id="dropdown">
+                    <select id="Output Units">
+                        <option value="Inches">Inches</option>
+                        <option value="Feet">Feet</option>
+                        <option value="Yards">Yards</option>
+                        <option value="Miles">Miles</option>
+                        <option value="Millimeters">Millimeters</option>
+                        <option value="Centimeters">Centimeters</option>
+                        <option value="Meters">Meters</option>
+                        <option value="Kilometers">Kilometers</option>
+                    </select>
+                </div>
 
+            <p>
+                <div>
+                    <button id="myBtn" onclick="unitconverter()">Convert</button>
+                </div>
 
-        </p>
-        <p>
-            Output Units:
-
-            <div id="dropdown">
-                <select id="Output Units">
-                    <option value="Inches">Inches</option>
-                    <option value="Feet">Feet</option>
-                    <option value="Yards">Yards</option>
-                    <option value="Miles">Miles</option>
-                    <option value="Millimeters">Millimeters</option>
-                    <option value="Centimeters">Centimeters</option>
-                    <option value="Meters">Meters</option>
-                    <option value="Kilometers">Kilometers</option>
-                </select>
-            </div>
-        </p>
-    <p>
-    <div>
-   <button id="myBtn" onclick="unitconverter()">Convert</button>
-     </div>
-     </p>
-     <p>
-            <output type="text" placeholder="1" id="outputNumber"/>
-        </p>
-</div>
-        </body>
-
+             <p>
+                <input type="text" placeholder="1" id="outputNumber"/>
+            
+        </div>
+      </body>
 </html>
