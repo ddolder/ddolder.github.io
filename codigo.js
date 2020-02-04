@@ -7,9 +7,8 @@
 
     outputMeters = convertToMeters(InputValue, InputUnits);
     OutputNumber = convertFromMeters(outputMeters, OutputUnits);
-    var outputSentence = InputValue + " " + InputUnits + " is approximately the same as " + OutputNumber + " " + OutputUnits;
 
-	document.getElementById("output").innerHTML = outputSentence;
+	document.getElementById("output").innerHTML = OutputNumber;
 }
 
 function toMeters(inputNumber, InputUnits) {
