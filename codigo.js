@@ -9,7 +9,7 @@
     OutputNumber = convertFromMeters(outputMeters, OutputUnits);
     var outputSentence = InputValue + " " + InputUnits + " is approximately the same as " + OutputNumber + " " + OutputUnits;
 
-	document.getElementById("convertSentence").innerHTML = outputSentence;
+	document.getElementById("output").innerHTML = outputSentence;
 }
 
 function toMeters(inputNumber, InputUnits) {
