@@ -3,7 +3,7 @@ html {
 
 body {
   background-image: url("Fondo.jpg");
-  background-position: center;
+  background-position: center top;
   background-size: 1100px 700px;
   background-repeat: no-repeat;
   background-attachment: fixed;
