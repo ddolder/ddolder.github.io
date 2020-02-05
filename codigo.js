@@ -1,80 +1,147 @@
-function toMeters(inputNumber, InputUnits) {
-		if (InputUnits == "Inches") {
-		outputMeters = inputNumber * 0.0254;
+function toMeters(inputNumber, inputUnits) {
+	if (inputUnits == "Inches") {
+		var outputMeters = inputNumber * 0.0254;
         return outputMeters;
 	}
-	else if (InputUnits == "Feet") {
+	else if (inputUnits == "Feet") {
         outputMeters = inputNumber * 0.3048;
         return outputMeters;
 	}
-	else if (InputUnits == "Miles") {
+	else if (inputUnits == "Miles") {
         outputMeters = inputNumber * 1609.34;
         return outputMeters;
 	}
-	else if (InputUnits == "Millimeters") {
+	else if (inputUnits == "Millimeters") {
         outputMeters = inputNumber / 1000;
         return outputMeters;
 	}
-	else if (InputUnits == "Centimeters") {
+	else if (inputUnits == "Centimeters") {
         outputMeters = inputNumber / 100;
         return outputMeters;
 	}
-	else if (InputUnits == "Meters") {
+	else if (inputUnits == "Meters") {
         outputMeters = inputNumber;
         return outputMeters;
 	}
-	else if (InputUnits == "Kilometers") {
+	else if (inputUnits == "Kilometers") {
         outputMeters = inputNumber * 1000;
         return outputMeters;
 	}
-		else if (InputUnits == "Yards") {
-        outputMeters = inputNumber * 0.9144;
+}
+
+function fromMeters(inputMeters, outputUnits) {
+	if (outputUnits == "Inches") {
+		var outputNumber = inputMeters / 0.0254;
+        return outputNumber;
+	}
+	else if (outputUnits == "Feet") {
+        outputNumber = inputMeters / 0.3048;
+        return outputNumber;
+	}
+	else if (outputUnits == "Miles") {
+        outputNumber = inputMeters / 1609.34;
+        return outputNumber;
+	}
+	else if (outputUnits == "Millimeters") {
+        outputNumber = inputMeters * 1000;
+        return outputNumber;
+	}
+	else if (outputUnits == "Centimeters") {
+        outputNumber = inputMeters * 100;
+        return outputNumber;
+	}
+	else if (outputUnits == "Meters") {
+        outputNumber = inputMeters;
+        return outputNumber;
+	}
+	else if (outputUnits == "Kilometers") {
+        outputNumber = inputMeters / 1000;
+        return outputNumber;
+	}
+}
+
+function unitconverter() {
+	var inputUnitsBox = document.getElementById("Input Units");
+	var inputUnits = inputUnitsBox.options[inputUnitsBox.selectedIndex].text;
+	var outputUnitsBox = document.getElementById("Output Units");
+	var outputUnits = outputUnitsBox.options[outputUnitsBox.selectedIndex].text;
+	var inputValue = document.getElementById("inputNumber").value;
+
+    var outputMeters = toMeters(inputValue, inputUnits);
+    var outputNumber = fromMeters(outputMeters, outputUnits);
+
+	document.getElementById("convnumber").innerHTML = outputUnits;
+}function toMeters(inputNumber, inputUnits) {
+	if (inputUnits == "Inches") {
+		var outputMeters = inputNumber * 0.0254;
+        return outputMeters;
+	}
+	else if (inputUnits == "Feet") {
+        outputMeters = inputNumber * 0.3048;
+        return outputMeters;
+	}
+	else if (inputUnits == "Miles") {
+        outputMeters = inputNumber * 1609.34;
+        return outputMeters;
+	}
+	else if (inputUnits == "Millimeters") {
+        outputMeters = inputNumber / 1000;
+        return outputMeters;
+	}
+	else if (inputUnits == "Centimeters") {
+        outputMeters = inputNumber / 100;
+        return outputMeters;
+	}
+	else if (inputUnits == "Meters") {
+        outputMeters = inputNumber;
+        return outputMeters;
+	}
+	else if (inputUnits == "Kilometers") {
+        outputMeters = inputNumber * 1000;
         return outputMeters;
 	}
 }
+
 function fromMeters(inputMeters, outputUnits) {
 	if (outputUnits == "Inches") {
-		OutputNumber = inputMeters / 0.0254;
-        return OutputNumber;
+		var outputNumber = inputMeters / 0.0254;
+        return outputNumber;
 	}
 	else if (outputUnits == "Feet") {
-        OutputNumber = inputMeters / 0.3048;
-        return OutputNumber;
+        outputNumber = inputMeters / 0.3048;
+        return outputNumber;
 	}
 	else if (outputUnits == "Miles") {
-        OutputNumber = inputMeters / 1609.34;
-        return OutputNumber;
+        outputNumber = inputMeters / 1609.34;
+        return outputNumber;
 	}
 	else if (outputUnits == "Millimeters") {
-        OutputNumber = inputMeters * 1000;
-        return OutputNumber;
+        outputNumber = inputMeters * 1000;
+        return outputNumber;
 	}
 	else if (outputUnits == "Centimeters") {
-        OutputNumber = inputMeters * 100;
-        return OutputNumber;
+        outputNumber = inputMeters * 100;
+        return outputNumber;
 	}
 	else if (outputUnits == "Meters") {
-        OutputNumber = inputMeters;
-        return OutputNumber;
+        outputNumber = inputMeters;
+        return outputNumber;
 	}
 	else if (outputUnits == "Kilometers") {
-        OutputNumber = inputMeters / 1000;
-        return OutputNumber;
-	}
-		else if (outputUnits == "Yards") {
-        OutputNumber = inputMeters / 0.9144;
-        return OutputNumber;
+        outputNumber = inputMeters / 1000;
+        return outputNumber;
 	}
 }
-  function unitconverter() {
+
+function unitconverter() {
 	var inputUnitsBox = document.getElementById("Input Units");
-	var InputUnits = inputUnitsBox.options[inputUnitsBox.selectedIndex].text;
+	var inputUnits = inputUnitsBox.options[inputUnitsBox.selectedIndex].text;
 	var outputUnitsBox = document.getElementById("Output Units");
-	var OutputUnits = outputUnitsBox.options[outputUnitsBox.selectedIndex].text;
-	var InputValue = document.getElementById("inputNumber").value;
+	var outputUnits = outputUnitsBox.options[outputUnitsBox.selectedIndex].text;
+	var inputValue = document.getElementById("inputNumber").value;
 
-    outputMeters = toMeters(InputValue, InputUnits);
-    OutputNumber = fromMeters(outputMeters, OutputUnits);
+    var outputMeters = toMeters(inputValue, inputUnits);
+    var outputNumber = fromMeters(outputMeters, outputUnits);
 
-	document.getElementById("output").innerHTML = OutputNumber;
+	document.getElementById("convnumber").innerHTML = outputUnits;
 }
