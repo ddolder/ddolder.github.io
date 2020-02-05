@@ -62,7 +62,7 @@ function fromMeters(inputMeters, outputUnits) {
         return OutputNumber;
 	}
 		else if (outputUnits == "Yards") {
-        OutputNumber = inputMeters / 1000;
+        OutputNumber = inputMeters / 0.9144;
         return OutputNumber;
 	}
 }
