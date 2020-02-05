@@ -60,15 +60,15 @@ function fromMeters(inputMeters, outputUnits) {
 	}
 }
 
-    function unitConverter() {
-	var inputUnitsBox = document.getElementById("input Units");
+    function unitconverter() {
+	var inputUnitsBox = document.getElementById("inputUnits");
 	var inputUnits = inputUnitsBox.options[inputUnitsBox.selectedIndex].text;
-	var outputUnitsBox = document.getElementById("output Units");
+	var outputUnitsBox = document.getElementById("outputUnits");
 	var outputUnits = outputUnitsBox.options[outputUnitsBox.selectedIndex].text;
-	var inputNumber = document.getElementById("input Number").value;
+	var inputNumber = document.getElementById("inputNumber").value;
 
-    var outputMeters = toMeters(inputValue, inputUnits);
+    var outputMeters = toMeters(inputNumber, inputUnits);
     var outputNumber = fromMeters(outputMeters, outputUnits);
 
-	document.getElementById("conv number").innerHTML = outputUnits;
+	document.getElementById("convnumber").innerHTML = outputNumber;
 }
