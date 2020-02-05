@@ -76,8 +76,8 @@ function unitconverter() {
 		var outputMeters = inputNumber * 0.0254;
         return outputMeters;
 	}
-	else if (inputUnits == "Feet") {
-        outputMeters = inputNumber * 0.3048;
+		else if (inputUnits == "Yards") {
+        outputMeters = inputNumber * 0.9144;
         return outputMeters;
 	}
 	else if (inputUnits == "Miles") {
@@ -109,6 +109,10 @@ function fromMeters(inputMeters, outputUnits) {
 	}
 	else if (outputUnits == "Feet") {
         outputNumber = inputMeters / 0.3048;
+        return outputNumber;
+	}
+	else if (outputUnits == "Yards") {
+        outputNumber = inputMeters / 0.9144;
         return outputNumber;
 	}
 	else if (outputUnits == "Miles") {
