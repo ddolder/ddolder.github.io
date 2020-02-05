@@ -76,6 +76,10 @@ function unitconverter() {
 		var outputMeters = inputNumber * 0.0254;
         return outputMeters;
 	}
+		else if (inputUnits == "Feet") {
+        outputMeters = inputNumber * 0.3048;
+        return outputMeters;
+	}
 		else if (inputUnits == "Yards") {
         outputMeters = inputNumber * 0.9144;
         return outputMeters;
