@@ -60,18 +60,7 @@ function fromMeters(inputMeters, outputUnits) {
 	}
 }
 
-function unitconverter() {
-	var inputUnitsBox = document.getElementById("Input Units");
-	var inputUnits = inputUnitsBox.options[inputUnitsBox.selectedIndex].text;
-	var outputUnitsBox = document.getElementById("Output Units");
-	var outputUnits = outputUnitsBox.options[outputUnitsBox.selectedIndex].text;
-	var inputValue = document.getElementById("inputNumber").value;
-
-    var outputMeters = toMeters(inputValue, inputUnits);
-    var outputNumber = fromMeters(outputMeters, outputUnits);
-
-	document.getElementById("convnumber").innerHTML = outputUnits;
-}function toMeters(inputNumber, inputUnits) {
+function toMeters(inputNumber, inputUnits) {
 	if (inputUnits == "Inches") {
 		var outputMeters = inputNumber * 0.0254;
         return outputMeters;
@@ -141,12 +130,12 @@ function fromMeters(inputMeters, outputUnits) {
 	}
 }
 
-function unitconverter() {
-	var inputUnitsBox = document.getElementById("Input Units");
+function unitConverter() {
+	var inputUnitsBox = document.getElementById("input Units");
 	var inputUnits = inputUnitsBox.options[inputUnitsBox.selectedIndex].text;
-	var outputUnitsBox = document.getElementById("Output Units");
+	var outputUnitsBox = document.getElementById("output Units");
 	var outputUnits = outputUnitsBox.options[outputUnitsBox.selectedIndex].text;
-	var inputValue = document.getElementById("inputNumber").value;
+	var inputValue = document.getElementById("input Number").value;
 
     var outputMeters = toMeters(inputValue, inputUnits);
     var outputNumber = fromMeters(outputMeters, outputUnits);
