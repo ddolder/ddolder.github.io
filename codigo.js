@@ -1,16 +1,3 @@
-  function unitconverter() {
-	var inputUnitsBox = document.getElementById("Input Units");
-	var InputUnits = inputUnitsBox.options[inputUnitsBox.selectedIndex].text;
-	var outputUnitsBox = document.getElementById("Output Units");
-	var OutputUnits = outputUnitsBox.options[outputUnitsBox.selectedIndex].text;
-	var InputValue = document.getElementById("inputNumber").value;
-
-    outputMeters = convertToMeters(InputValue, InputUnits);
-    OutputNumber = convertFromMeters(outputMeters, OutputUnits);
-
-	document.getElementById("output").innerHTML = OutputNumber;
-}
-
 function toMeters(inputNumber, InputUnits) {
 		if (InputUnits == "Inches") {
 		outputMeters = inputNumber * 0.0254;
@@ -46,7 +33,6 @@ function toMeters(inputNumber, InputUnits) {
 	}
 }
 function fromMeters(inputMeters, outputUnits) {
-	//converts to outputUnits
 	if (outputUnits == "Inches") {
 		OutputNumber = inputMeters / 0.0254;
         return OutputNumber;
@@ -75,8 +61,20 @@ function fromMeters(inputMeters, outputUnits) {
         OutputNumber = inputMeters / 1000;
         return OutputNumber;
 	}
-		else if (InputUnits == "Yards") {
-        outputMeters = inputNumber / 0.9144;
-        return outputMeters;
+		else if (outputUnits == "Yards") {
+        OutputNumber = inputMeters / 1000;
+        return OutputNumber;
 	}
+}
+  function unitconverter() {
+	var inputUnitsBox = document.getElementById("Input Units");
+	var InputUnits = inputUnitsBox.options[inputUnitsBox.selectedIndex].text;
+	var outputUnitsBox = document.getElementById("Output Units");
+	var OutputUnits = outputUnitsBox.options[outputUnitsBox.selectedIndex].text;
+	var InputValue = document.getElementById("inputNumber").value;
+
+    outputMeters = toMeters(InputValue, InputUnits);
+    OutputNumber = fromMeters(outputMeters, OutputUnits);
+
+	document.getElementById("output").innerHTML = OutputNumber;
 }
