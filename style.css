@@ -37,8 +37,8 @@ button {
 }
 
 .block {
-      width: 40%;
-       margin-bottom: auto;
+    width: 40%;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -48,8 +48,6 @@ button {
   border: 2px solid black;
   color:black;
   padding:12px;
-   width: 40%;
-   margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  width: 40%;
+  align: center;
 }
