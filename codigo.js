@@ -6,6 +6,10 @@ function toMeters(inputNumber, inputUnits) {
 	else if (inputUnits == "Feet") {
         outputMeters = inputNumber * 0.3048;
         return outputMeters;
+        	}
+	else if (inputUnits == "Yards") {
+        outputMeters = inputNumber * 0.9144;
+        return outputMeters;
 	}
 	else if (inputUnits == "Miles") {
         outputMeters = inputNumber * 1609.34;
@@ -40,6 +44,10 @@ function fromMeters(inputMeters, outputUnits) {
 	}
 	else if (outputUnits == "Miles") {
         outputNumber = inputMeters / 1609.34;
+        return outputNumber;
+	}
+	else if (outputUnits == "Yards") {
+        outputNumber = inputMeters / 0.9144;
         return outputNumber;
 	}
 	else if (outputUnits == "Millimeters") {
