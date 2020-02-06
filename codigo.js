@@ -78,5 +78,5 @@ function fromMeters(inputMeters, outputUnits) {
     var outputMeters = toMeters(inputNumber, inputUnits);
     var outputNumber = fromMeters(outputMeters, outputUnits);
 
-	document.getElementById("convnumber").innerHTML = outputNumber;
+	document.getElementById("convnumber").innerHTML = outputNumber.toFixed(4);
 }
