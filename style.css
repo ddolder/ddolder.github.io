@@ -48,6 +48,7 @@ button {
   border: 2px solid black;
   color:black;
   padding:12px;
-  width: 40%;
-  align: center;
+  width: 50%;
+  align-position: center;
+   display: inline-block;
 }
