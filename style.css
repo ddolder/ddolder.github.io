@@ -29,7 +29,7 @@ button {
 }
 
 .dropdown {
-    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
+    font-family: Book Antiqua, sans-serif;
     text-align: center;
     display: inline-block;
     margin-left:auto;
@@ -37,7 +37,7 @@ button {
 }
 
 .dropdowntext {
-    font-family: "Book Antiqua", "Bookman Old Style", sans-serif;
+    font-family: Book Antiqua, sans-serif;
     position: absolute;
     min-width: 160px;
     background-color: #ebca9d;
