@@ -11,7 +11,7 @@
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
-        height: 400px;
+        height: 500px;
         width: 100%;
         background-color: grey;
         margin: 0;
@@ -20,36 +20,47 @@
     </style>
   </head>
   <body>
-    <div id="map"></div>
+  <h1>Home Town Map - Danisa</h1>
+    <!--The div element for the map -->
+     <div id="map"></div>
     <script>
     function initMap() {
   // The location of La Plata
   var laplata = {lat: -34.921337, lng: -57.954562};
   // The map, centered at La Plata
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 12, center: laplata});
-  // The marker, positioned at La Plata
-  var marker = new google.maps.Marker({position: laplata, map: map});
+      document.getElementById('map'), {zoom: 13, center: laplata});
+ // Create an array of alphabetical characters used to label the markers.
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-      var script = document.createElement('script');
-        // This example uses a local copy of the GeoJSON stored at
-        // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
-        script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
-        document.getElementsByTagName('head')[0].appendChild(script);
-      }
-
-      // Loop through the results array and place a marker for each
-      // set of coordinates.
-      window.eqfeed_callback = function(results) {
-        for (var i = 0; i < results.features.length; i++) {
-          var coords = results.features[i].geometry.coordinates;
-          var latLng = new google.maps.LatLng(coords[1],coords[0]);
-          var marker = new google.maps.Marker({
-            position: latLng,
-            map: map
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
           });
-        }
-  }
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var locations = [
+        {lat: -34.936844, lng: -57.946350},
+        {lat: -34.894251, lng: -57.987067},
+        {lat: -34.908268, lng: -57.943873},
+        {lat: -34.907463, lng: -57.944907},
+        {lat: -34.906745, lng: -57.954170},
+        {lat: -34.671264, lng: 150.863657},
+        {lat: -35.304724, lng: 148.662905},
+        {lat: -43.999792, lng: 170.463352}
+      ]
+    </script>
+    <!-- Replace following script src -->
+    <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js">
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXS6eLxCWdf31JokswS3GbO582iuY0PqI&callback=initMap"
     async defer></script>
