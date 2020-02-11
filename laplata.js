@@ -12,6 +12,21 @@
           map: map,
           title:"La Plata"
         });
+        var laplataString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        "<h1>La Plata City</h1>" +
+        '<p>"La Plata is the capital city of Buenos Aires Province, Argentina.</p>' +
+        '<p>According to the 2001 census, it has a population of 765,378 and its metropolitan area has 899,523 inhabitants.</p>' +
+        '<p>La Plata was planned and developed to serve as the provincial capital after the city of Buenos Aires was federalized in 1880.</p>' +
+        '<p>It was officially founded by Governor Dardo Rocha on 19 November 1882" (Wikipedia).</p>' +
+        '<img src = "laplata.jpg">';
+        var laplataInfo = new google.maps.InfoWindow({
+        content: laplataString
+        });
+        laplataMarker.addListener('click', function () {
+        laplataInfo.open(map, laplataMarker);
+        });
 
         var house1 = new google.maps.Marker({
           position: {lat: -34.936844, lng: -57.946350},
@@ -28,13 +43,13 @@
         var highschool = new google.maps.Marker({
           position:  {lat: -34.908268, lng: -57.943873},
           map: map,
-          title:"Nacional Highschool"
+          title:"'Rafael Hernandez' National Highschool"
         });
 
         var university = new google.maps.Marker({
           position:  {lat: -34.907463, lng: -57.944907},
           map: map,
-          title:"Engineering National University"
+          title:"Faculty of Engineering UNLP"
         });
 
         var church = new google.maps.Marker({
