@@ -97,7 +97,7 @@
         '<div id="siteNotice">' +
         '</div>' +
         "<h1>Faculty of Engineering UNLP</h1>" +
-        '<p>"The National University of La Plata is one of the most important Argentine national universities.</p>' +
+        '<p>"The National University of La Plata (UNLP) is one of the most important Argentine national universities.</p>' +
         '<p>It has over 90,000 regular students, 10,000 teaching staff, 17 departments and 106 available degrees.</p>' +
         '<p>The Faculty of Engineering is part of the National University of La Plata.</p>' +
         '<p>I am the third generation in the Dolder family graduated in this faculty.</p>' +
