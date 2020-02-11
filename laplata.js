@@ -75,7 +75,7 @@
         var highschoolString = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        "<h1>'Rafael Hernández' National College - Highschool</h1>" +
+        "<h1>'Rafael Hernández' National College - Highschool -</h1>" +
         '<p>"The National College is one of the four public high schools that are part of the National University of La Plata.</p>' +
         '<p>Originally, the college, founded by Joaquín V. González, was reserved for boys.</p>' +
         '<p> the college functioned as a classic British boarding school, where students and professors lived together.</p>' +
