@@ -30,26 +30,22 @@
           map: map,
           title:"Nacional Highschool"
         });
-        highschool.setMap(map);
 
         var university = new google.maps.Marker({
           position:  {lat: -34.907463, lng: -57.944907},
           map: map,
           title:"Engineering National University"
         });
-        university.setMap(map);
 
         var church = new google.maps.Marker({
           position:  {lat: -34.906745, lng: -57.954170},
           map: map,
           title:"Tolosa Ward"
         });
-        church.setMap(map);
 
         var ushuaia = new google.maps.Marker({
           position:  {lat: -54.817262, lng: -68.333020},
           map: map,
           title:"Ushuaia"
         });
-        ushuaia.setMap(map);
       }
