@@ -30,13 +30,13 @@
         var house1 = new google.maps.Marker({
           position: {lat: -34.936844, lng: -57.946350},
           map: map,
-          title:"House from 0 to 9 years old"
+          title:"Early Childhood Home"
         });
         var house1String = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        "<h1>Childhood Home</h1>" +
-        '<p>This house is situated in from of a park.</p>' +
+        "<h1>Early Childhood Home</h1>" +
+        '<p>This house is situated in from of a park. I lived there until I was 9 years old</p>' +
         '<p>My parents bought a department in the second floor when they did not have kids.</p>' +
         '<p>After having 5 kids, they decided to buy also one department in the first floor that was for sale".</p>' +
         '<img src = "home1.jpg">';
@@ -50,7 +50,21 @@
         var house2 = new google.maps.Marker({
           position:  {lat: -34.894251, lng: -57.987067},
           map: map,
-          title:"House from 9 to 23 years old"
+          title:"Home since 9 to 23 years old"
+        });
+        var house2String = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        "<h1>Home since 9 to 23 years old</h1>" +
+        '<p>We moved there when I was 9 years old.</p>' +
+        '<p>My parents were building it for 4 years.</p>' +
+        '<p>They still live there.".</p>' +
+        '<img src = "home2.jpg">';
+        var house2Info = new google.maps.InfoWindow({
+        content: house2String
+        });
+        house2.addListener('click', function () {
+        house2Info.open(map, house2);
         });
 
         var highschool = new google.maps.Marker({
