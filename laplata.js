@@ -93,11 +93,58 @@
           map: map,
           title:"Faculty of Engineering UNLP"
         });
+        var universityString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        "<h1>Faculty of Engineering UNLP</h1>" +
+        '<p></p>' +
+        '<p></p>' +
+        '<p></p>' +
+        '<p></p>' +
+        '<img src = "facultad.jpg">';
+        var universityInfo = new google.maps.InfoWindow({
+        content: universityString
+        });
+        university.addListener('click', function () {
+        universityInfo.open(map, university);
+        });
 
-        var church = new google.maps.Marker({
+        var church1 = new google.maps.Marker({
+          position:  {lat: -34.919533, lng: -57.951040},
+          map: map,
+          title:"La Plata 2 Ward, La Plata Stake"
+        });
+             var church1String = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        "<h1>La Plata 2 Ward, La Plata Stake</h1>" +
+        '<p>My grandma was a widow and she cooked for the missionaries as a job.</p>' +
+        '<p>She was asked to cook also for the construction missionaries as a service.</p>' +
+        '<p>I got baptized in this church.</p>' +
+        '<img src = "church1.jpg">';
+        var church1Info = new google.maps.InfoWindow({
+        content: church1String
+        });
+        church1.addListener('click', function () {
+        church1Info.open(map, church1);
+        });
+
+        var church2 = new google.maps.Marker({
           position:  {lat: -34.906745, lng: -57.954170},
           map: map,
           title:"Tolosa Ward, La Plata Stake"
+        });
+             var church2String = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        "<h1>Tolosa Ward, La Plata Stake</h1>" +
+        '<p></p>' +
+        '<img src = "church.jpg">';
+        var church2Info = new google.maps.InfoWindow({
+        content: church2String
+        });
+        church2.addListener('click', function () {
+        church2Info.open(map, church2);
         });
 
         var ushuaia = new google.maps.Marker({
