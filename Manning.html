@@ -1,0 +1,30 @@
+<html>
+<script src="manning.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+      <body>
+        <div class="block">
+            <h1><br><br><br><br>Manning Calculator</h1>
+            <br>
+             <p>
+                 <input type="text" class="conv" placeholder="Manning Roughness" id="n"/>
+            <p>
+                <input type="text" class="conv" placeholder="1.486 for English units and 1.0 for SI units" id="k"/>
+             <p>
+                <input type="text" class="conv" placeholder="Area" id="A"/>
+            <p>
+                <input type="text" class="conv" placeholder="Wetted Perimeter" id="Pw"/>
+             <p>
+                <input type="text" class="conv" placeholder="Slope" id="S"/>
+            <p>
+                <div>
+                    <button id="myBtn" onclick="mannning()">Calculator</button>
+                </div>
+
+             <p>
+                <div class="conv">
+                    <div id="calculatednumber">
+                    </div>
+                </div>
+        </div>
+      </body>
+</html>
