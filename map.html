@@ -22,8 +22,8 @@
   <body>
   <h1>Home Town Map - Danisa</h1>
     <!--The div element for the map -->
-   
-    <script>
+  <div id="map"></div>
+  <script>
     function initMap() {
   // The location of La Plata
   var laplata = {lat: -34.921337, lng: -57.954562};
@@ -73,8 +73,7 @@ var ushuaia = new google.maps.Marker({
     title:"Ushuaia"
 });
 ushuaia.setMap(map);
-
-    </script>
+  </script>
 
    <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js">
     </script>
