@@ -1,25 +1,29 @@
 
       function initMap() {
-        // The location of La Plata
-        var laplata = {lat: -34.921337, lng: -57.954562};
-        title:"La Plata"
         // The map, centered at La Plata
-        var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 13, center: laplata});
+         var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.921337, lng: -57.954562},
+        zoom: 13,
+        mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                'styled_map']
+        }
+      });
+
+        var laplata = {lat: -34.921337, lng: -57.954562};
+            title:"La Plata"
 
         var house1 = new google.maps.Marker({
           position: {lat: -34.936844, lng: -57.946350},
           map: map,
           title:"House from 0 to 9 years old"
         });
-        house1.setMap(map);
 
         var house2 = new google.maps.Marker({
           position:  {lat: -34.894251, lng: -57.987067},
           map: map,
           title:"House from 9 to 23 years old"
         });
-        house2.setMap(map);
 
         var highschool = new google.maps.Marker({
           position:  {lat: -34.908268, lng: -57.943873},
