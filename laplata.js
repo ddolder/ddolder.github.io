@@ -3,10 +3,7 @@
         // The map, centered at La Plata
          var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: -34.921337, lng: -57.954562},
-        zoom: 13,
-        mapTypeControlOptions: {
-            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
-                'styled_map']
+        zoom: 13
         }
       });
 
