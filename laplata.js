@@ -97,10 +97,10 @@
         '<div id="siteNotice">' +
         '</div>' +
         "<h1>Faculty of Engineering UNLP</h1>" +
-        '<p></p>' +
-        '<p></p>' +
-        '<p></p>' +
-        '<p></p>' +
+        '<p>"The National University of La Plata is one of the most important Argentine national universities.</p>' +
+        '<p>It has over 90,000 regular students, 10,000 teaching staff, 17 departments and 106 available degrees.</p>' +
+        '<p>The Faculty of Engineering is part of the National University of La Plata.</p>' +
+        '<p>I am the third generation in the Dolder family graduated in this faculty.</p>' +
         '<img src = "facultad.jpg">';
         var universityInfo = new google.maps.InfoWindow({
         content: universityString
@@ -119,8 +119,8 @@
         '</div>' +
         "<h1>La Plata 2 Ward, La Plata Stake</h1>" +
         '<p>My grandma was a widow and she cooked for the missionaries as a job.</p>' +
-        '<p>She was asked to cook also for the construction missionaries as a service.</p>' +
-        '<p>I got baptized in this church.</p>' +
+        '<p>She was asked to cook also for the construction missionaries of this chapel as a service.</p>' +
+        '<p>This was the first chapel in La Plata. I got baptized in it.</p>' +
         '<img src = "church1.jpg">';
         var church1Info = new google.maps.InfoWindow({
         content: church1String
