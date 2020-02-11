@@ -78,7 +78,7 @@
         "<h1>'Rafael Hernández' National College - Highschool -</h1>" +
         '<p>"The National College is one of the four public high schools that are part of the National University of La Plata.</p>' +
         '<p>Originally, the college, founded by Joaquín V. González, was reserved for boys.</p>' +
-        '<p> the college functioned as a classic British boarding school, where students and professors lived together.</p>' +
+        '<p>The college functioned as a classic British boarding school, where students and professors lived together.</p>' +
         '<p>It is considered one of the most prestigious secondary schools in Argentina" (Wikipedia).</p>' +
         '<img src = "nacional.jpg">';
         var highschoolInfo = new google.maps.InfoWindow({
