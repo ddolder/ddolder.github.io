@@ -58,7 +58,7 @@
         "<h1>Home since 9 to 23 years old</h1>" +
         '<p>We moved there when I was 9 years old.</p>' +
         '<p>My parents were building it for 4 years.</p>' +
-        '<p>They still live there.".</p>' +
+        '<p>They still live there..</p>' +
         '<img src = "home2.jpg">';
         var house2Info = new google.maps.InfoWindow({
         content: house2String
@@ -70,7 +70,22 @@
         var highschool = new google.maps.Marker({
           position:  {lat: -34.908268, lng: -57.943873},
           map: map,
-          title:"'Rafael Hernandez' National Highschool"
+          title:"'Rafael Hernández' National College - Highschool"
+        });
+        var highschoolString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        "<h1>'Rafael Hernández' National College - Highschool</h1>" +
+        '<p>"The Rafael Hernández National College is one of the four public high schools that are part of the National University of La Plata.</p>' +
+        '<p>Originally, the college, founded by Joaquín V. González, was reserved for boys.</p>' +
+        '<p> the college functioned as a classic British boarding school, where students and professors lived together.</p>' +
+        '<p>It is considered one of the most prestigious secondary schools in Argentina" (Wikipedia).</p>' +
+        '<img src = "nacional.jpg">';
+        var highschoolInfo = new google.maps.InfoWindow({
+        content: highschoolString
+        });
+        highschool.addListener('click', function () {
+        highschoolInfo.open(map, highschool);
         });
 
         var university = new google.maps.Marker({
@@ -88,6 +103,21 @@
         var ushuaia = new google.maps.Marker({
           position:  {lat: -54.817262, lng: -68.333020},
           map: map,
-          title:"Ushuaia"
+          title:"Ushuaia - Home since 23 years old"
+        });
+         var ushuaiaString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        "<h1>Ushuaia - Home since 23 years old</h1>" +
+        '<p>"Motto: Ushuaia, end of the world, beginning of everything.</p>' +
+        '<p>It was regarded as the southernmost city in the world.</p>' +
+        '<p>In Argentina, it is considered the only trans-Andean city.</p>' +
+        '<p>Summers tend to be cloudy and windy, with maximum temperatures averaging around 14 °C (57 °F) during the day and about 5 °C (41 °F) at night"(Wikipedia).</p>' +
+        '<img src = "ushuaia.jpg">';
+        var ushuaiaInfo = new google.maps.InfoWindow({
+        content: ushuaiaString
+        });
+        ushuaia.addListener('click', function () {
+        ushuaiaInfo.open(map, ushuaia);
         });
       }
