@@ -1,5 +1,5 @@
-      <script>
-          function initMap() {
+
+      function initMap() {
         // The location of La Plata
         var laplata = {lat: -34.921337, lng: -57.954562};
         title:"La Plata"
@@ -48,4 +48,4 @@
           title:"Ushuaia"
         });
         ushuaia.setMap(map);
-      </script>
+      }
