@@ -38,7 +38,7 @@
         var church = new google.maps.Marker({
           position:  {lat: -34.906745, lng: -57.954170},
           map: map,
-          title:"Tolosa Ward"
+          title:"Tolosa Ward, La Plata Stake"
         });
 
         var ushuaia = new google.maps.Marker({
