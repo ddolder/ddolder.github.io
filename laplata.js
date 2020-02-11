@@ -32,6 +32,20 @@
           map: map,
           title:"House from 0 to 9 years old"
         });
+        var house1String = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        "<h1>Childhood Home</h1>" +
+        '<p>This house is situated in from of a park.</p>' +
+        '<p>My parents bought a department in the second floor when they did not have kids.</p>' +
+        '<p>After having 5 kids, they decided to buy also one department in the first floor that was for sale".</p>' +
+        '<img src = "home1.jpg">';
+        var house1Info = new google.maps.InfoWindow({
+        content: house1String
+        });
+        house1.addListener('click', function () {
+        house1Info.open(map, house1);
+        });
 
         var house2 = new google.maps.Marker({
           position:  {lat: -34.894251, lng: -57.987067},
