@@ -10,7 +10,8 @@
         }
       });
 
-        var laplata = {lat: -34.921337, lng: -57.954562};
+        var laplata = new google.maps.Marker({
+          position: {lat: -34.921337, lng: -57.954562};
             title:"La Plata"
 
         var house1 = new google.maps.Marker({
