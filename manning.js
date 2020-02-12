@@ -20,9 +20,11 @@ function manning() {
 function english() {
     document.getElementById("longunit1").innerHTML = "[ft]";
     document.getElementById("longunit2").innerHTML = "[ft]";
+    document.getElementById("longunit3").innerHTML = "[ft/s]";
 }
 
 function si() {
     document.getElementById("longunit1").innerHTML = "[m]";
-    document.getElementById("longunit2").innerHTML = "[m]";v
+    document.getElementById("longunit2").innerHTML = "[m]";
+    document.getElementById("longunit3").innerHTML = "[m/s]";
 }
