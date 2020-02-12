@@ -12,9 +12,27 @@ function manning() {
     var S = document.getElementById("S").value;
     var A = b*h;
     var Pw = b+2*h;
-    var vel = (k/n)*(A/Pw)^(2/3)*(S)^(1/2);
-
-	document.getElementById("calculatednumber").innerHTML = vel.toPrecision(6);
+    var vel
+        if (n < 0 || n > 1) {
+        vel = "n is out of range";
+        document.getElementById("longunit3").innerHTML = "";
+        }
+        else if (h < 0) {
+        vel = "The Depth (y) cannot be negative";
+        document.getElementById("longunit3").innerHTML = "";
+        }
+        else if (b < 0) {
+        vel = "The Width (b) cannot be negative";
+        document.getElementById("longunit3").innerHTML = "";
+        }
+        else if (S < 0) {
+        vel = "Negative Slope?";
+        document.getElementById("longunit3").innerHTML = document.getElementById('wrongway');
+        }
+        else {
+        vel = (k/n)*(A/Pw)^(2/3)*(S)^(1/2);
+        }
+	document.getElementById("calculatednumber").innerHTML = vel;
 }
 
 function english() {

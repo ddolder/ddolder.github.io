@@ -45,5 +45,8 @@ button {
   width: 40%;
   align-position: center;
   text-align: center;
-   display: inline-block;
+  display: inline-block;
+}
+#wrongway {
+  background-image: url("slope.jpg");
 }
