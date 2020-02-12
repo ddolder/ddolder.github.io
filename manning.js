@@ -1,10 +1,12 @@
 function manning() {
-
+    var k;
 	var n = document.getElementById("n").value;
-	if document.getElementById("k1").checked
-	    var k = document.getElementById("k1").value;
-	    else if document.getElementById("k2").checked
-	    var k = document.getElementById("k2").value;
+    if(document.getElementById("k1").checked==true){
+    k = 1.486;
+        }
+    else if(document.getElementById("k2").checked==true){
+    k = 1.0;
+        }
     var A = document.getElementById("A").value;
     var Pw = document.getElementById("Pw").value;
     var S = document.getElementById("S").value;
