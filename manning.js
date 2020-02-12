@@ -12,5 +12,15 @@ function manning() {
     var S = document.getElementById("S").value;
     var velocity = (k/n)*(A/Pw)^(2/3)*(S)^(1/2);
 
-	document.getElementById("calculatednumber").innerHTML = velocity.toPrecision(4);
+	document.getElementById("calculatednumber").innerHTML = velocity.toPrecision(6);
+}
+
+function english() {
+    document.getElementById("longunit1").innerHTML = "[ft]";
+    document.getElementById("longunit2").innerHTML = "[ft]";
+}
+
+function si() {
+    document.getElementById("longunit1").innerHTML = "[m]";
+    document.getElementById("longunit2").innerHTML = "[m]";v
 }
