@@ -4,17 +4,17 @@ function manning() {
     var k;
 	var n = document.getElementById("n").value;
     if(document.getElementById("k1").checked==true){
-    k = 1.486;
+    k = document.getElementById("k1").value;
         }
     else if(document.getElementById("k2").checked==true){
-    k = 1.0;
+    k = document.getElementById("k2").value;
         }
     var b = document.getElementById("b").value;
     var h = document.getElementById("h").value;
     var S = document.getElementById("S").value;
     var A = b*h;
     var Pw = b+2*h;
-    var vel
+    var vel;
      if (n < 0 || n > 1) {
         vel = "n is out of range";
         document.getElementById("longunit3").innerHTML = "";
@@ -34,7 +34,7 @@ function manning() {
         else {
         vel = (k/n)*(A/Pw)^(2/3)*(S)^(1/2);
         }
-	 document.getElementById("calculatednumber").innerHTML = vel;
+document.getElementById("calculatednumber").innerHTML = vel;
 }
 
 function english() {
