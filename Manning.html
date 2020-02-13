@@ -5,7 +5,7 @@
         <div class="block">
             <h1>Manning's Equation Calculator</h1>
             <p>Danisa Dolder - Assigment #6 - 02/12/2020</p>
-            <img src = "equation.jpg" width="450" height="150">
+            <img src = "equation.jpg" width="350" height="150">
             <p>Please select the system:</p>
             <form>
               <input type="radio" id="k1" name="k" value="1.486" onclick="if(this.checked){english()}">
@@ -13,24 +13,22 @@
               <input type="radio" id="k2" name="k" value="1.0" onclick="if(this.checked){si()}">
               <label for="k2">SI</label><br>
                 </form>
-            <p>
-                 <input type="text" class="conv" placeholder="Manning Roughness (n)" id="n"/>
-             <p>
-                <input type="text" class="conv" placeholder="Width (b)" id="b"/> <div id ="longunit1"> </div>
-            <p>
-                <input type="text" class="conv" placeholder="Depth (y)" id="h"/> <div id ="longunit2"> </div>
-             <p>
-                <input type="text" class="conv" placeholder="Slope (S)" id="S"/>
-            <p>
+
+                 <input type="text" class="conv" placeholder="Manning Roughness (n)" id="n"/> <br>
+                <p><input type="text" class="conv" placeholder="Width (b)" id="b"/> <span id ="longunit1"> </span></p>
+                <input type="text" class="conv" placeholder="Depth (y)" id="h"/> <span id ="longunit2"> </span><br>
+                <p><input type="text" class="conv" placeholder="Slope (S)" id="S"/></p>
+
                 <div>
                     <button id="myBtn" onclick="manning()">Calculate Velocity</button>
                 </div>
-
-             <p>
-                The computed velocity is
+                The computed velocity is <br>
                 <div class="conv">
-                    <div id="calculatednumber">
-                    </div><div id ="longunit3"> </div>
+                    <div id="calculatednumber"></div>
+                    <div id ="longunit3"> </div>
+                </div>
+                <div id="wrongway" style="display:none">
+                    <img src="slope.jpg" alt="slope" style="float:center;width:100px;height:80px;">
                 </div>
         </div>
       </body>
