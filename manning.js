@@ -29,6 +29,7 @@ function manning() {
         }
         else if (S < 0) {
         vel = "Negative Slope?";
+        document.getElementById("longunit3").innerHTML = "";
          document.getElementById('wrongway').style.display="block";
         }
         else {
@@ -51,4 +52,18 @@ function si() {
     document.getElementById("longunit1").innerHTML = "[m]";
     document.getElementById("longunit2").innerHTML = "[m]";
     document.getElementById("longunit3").innerHTML = "[m/s]";
+}
+
+function clean() {
+    document.getElementById("n").value = "";
+    document.getElementById("b").value = "";
+    document.getElementById("h").value = "";
+    document.getElementById("S").value = "";
+    document.getElementById("calculatednumber").innerHTML = "";
+    document.getElementById("longunit1").innerHTML = "";
+    document.getElementById("longunit2").innerHTML = "";
+    document.getElementById("longunit3").innerHTML = "";
+    document.getElementById('wrongway').style.display="none";
+    document.getElementById("k1").checked=false;
+    document.getElementById("k2").checked=false;
 }
