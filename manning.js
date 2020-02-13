@@ -2,16 +2,16 @@ function manning() {
     document.getElementById('wrongway').style.display="none";
 
     var k;
-	var n = document.getElementById("n").value;
+	var n = Number(document.getElementById("n").value);
     if(document.getElementById("k1").checked==true){
-    k = document.getElementById("k1").value;
+    k = Number(document.getElementById("k1").value);
         }
     else if(document.getElementById("k2").checked==true){
-    k = document.getElementById("k2").value;
+    k = Number(document.getElementById("k2").value);
         }
-    var b = document.getElementById("b").value;
-    var h = document.getElementById("h").value;
-    var S = document.getElementById("S").value;
+    var b = Number(document.getElementById("b").value);
+    var h = Number(document.getElementById("h").value);
+    var S = Number(document.getElementById("S").value);
     var A = b*h;
     var Pw = b+2*h;
     var vel;
@@ -32,7 +32,11 @@ function manning() {
          document.getElementById('wrongway').style.display="block";
         }
         else {
-        vel = (k/n)*(A/Pw)^(2/3)*(S)^(1/2);
+        var Rh = A/Pw;
+        var Rhp = Math.pow(Rh, 2/3);
+        var Sp = Math.pow(S, 1/2);
+        var coef = (k/n);
+        vel = coef*Rhp*Sp;
         }
 document.getElementById("calculatednumber").innerHTML = vel;
 }
