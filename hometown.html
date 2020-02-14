@@ -27,28 +27,34 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoiYWJoaXNoZWthbWFsMTgiLCJhIjoiY2s1eTVxNGExMmQ5MDNubjExaWY5MjdvbSJ9.3nmdjWZmUCDNyRdlPo5gbg'
 }).addTo(mymap);
 
-    var marker = L.marker([-34.906745, -57.954170]).addTo(mymap);
+var greenIcon = L.icon({
+    iconUrl: 'icon.png',
+
+    iconSize:     [30, 40], // size of the icon
+    iconAnchor:   [15, 40], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
+});
+
+    var marker = L.marker([-34.906745, -57.954170], {icon: greenIcon}).addTo(mymap);
     marker.bindPopup("Tolosa Ward, La Plata Stake").openPopup();
 
-    var marker1 = L.marker([-54.817262, -68.333020]).addTo(mymap);
-    marker.bindPopup("Ushuaia - Home since 23 years old").openPopup();
-
-    var marker = L.marker([-34.919533, -57.951040]).addTo(mymap);
+    var marker = L.marker([-34.919533, -57.951040], {icon: greenIcon}).addTo(mymap);
     marker.bindPopup("La Plata 2 Ward, La Plata Stake").openPopup();
 
-    var marker = L.marker([-34.907463, -57.944907]).addTo(mymap);
+    var marker = L.marker([-34.907463, -57.944907], {icon: greenIcon}).addTo(mymap);
     marker.bindPopup("Faculty of Engineering UNLP").openPopup();
 
-    var marker = L.marker([-34.908268, -57.943873]).addTo(mymap);
-    marker.bindPopup("'Rafael Hernández' National College - Highschool").openPopup();
+    var marker = L.marker([-34.908268, -57.943873], {icon: greenIcon}).addTo(mymap);
+    marker.bindPopup("'Rafael Hernandez' National College - Highschool").openPopup();
 
-    var marker = L.marker([-34.894251, -57.987067]).addTo(mymap);
+    var marker = L.marker([-34.894251, -57.987067], {icon: greenIcon}).addTo(mymap);
     marker.bindPopup("Home since 9 until 23 years old").openPopup();
 
-    var marker = L.marker([-34.936844, -57.946350]).addTo(mymap);
+    var marker = L.marker([-34.936844, -57.946350], {icon: greenIcon}).addTo(mymap);
     marker.bindPopup("Early Childhood Home").openPopup();
 
-    var marker = L.marker([-34.921337, -57.954562]).addTo(mymap);
+    var marker = L.marker([-34.921337, -57.954562], {icon: greenIcon}).addTo(mymap);
     marker.bindPopup("La Plata").openPopup();
 
     var polygon = L.polygon([
