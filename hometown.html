@@ -24,11 +24,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoiYWJoaXNoZWthbWFsMTgiLCJhIjoiY2s1eTVxNGExMmQ5MDNubjExaWY5MjdvbSJ9.3nmdjWZmUCDNyRdlPo5gbg'
 }).addTo(mymap);
 
-    var marker = L.marker([-54.817262, -68.333020]).addTo(mymap);
-    marker.bindPopup("Ushuaia - Home since 23 years old").openPopup();
-
     var marker = L.marker([-34.906745, -57.954170]).addTo(mymap);
     marker.bindPopup("Tolosa Ward, La Plata Stake").openPopup();
+
+    var marker1 = L.marker([-54.817262, -68.333020]).addTo(mymap);
+    marker.bindPopup("Ushuaia - Home since 23 years old").openPopup();
 
     var marker = L.marker([-34.919533, -57.951040]).addTo(mymap);
     marker.bindPopup("La Plata 2 Ward, La Plata Stake").openPopup();
