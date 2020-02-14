@@ -50,7 +50,7 @@
         var house2 = new google.maps.Marker({
           position:  {lat: -34.894251, lng: -57.987067},
           map: map,
-          title:"Home since 9 to 23 years old"
+          title:"Home since 9 until 23 years old"
         });
         var house2String = '<div id="content">' +
         '<div id="siteNotice">' +
