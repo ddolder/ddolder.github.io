@@ -8,11 +8,14 @@
     <style>
         #mapid { height: 550px; }
     </style>
+    <link href="hometown.css" type="text/css" rel="stylesheet" />
        <title>Home Town Map - Danisa</title>
 
 </head>
  <body>
       <h1>Hometown - Danisa</h1>
+      <p>Danisa Dolder - CEEN 514 - 02/20/2020</p>
+      <p>Assigment #7 - Build an Interactive Page with Leaflet Open Source Mapping API</p>
       <div id="mapid"></div>
  </body>
     <script>
@@ -55,5 +58,12 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     [-34.894187, -57.987013],
     [-34.894239, -57.987008]
 ]).addTo(mymap);
+
+var circle = L.circle([-34.894251, -57.987067], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 800
+}).addTo(mymap);
 
     </script>
