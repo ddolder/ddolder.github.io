@@ -13,6 +13,7 @@ h1 {
 
 body {
         background-image: url("flag1.jpg");
+         background-repeat: no-repeat;
         background-position: center top;
          background-size: 1400px 150px;
         margin: 0;
