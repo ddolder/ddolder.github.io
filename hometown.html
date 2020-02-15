@@ -18,7 +18,7 @@
       <div id="mapid"></div>
  </body>
     <script>
-    var mymap = L.map('mapid').setView([-34.921337, -57.954562], 13);
+    var mymap = L.map('mapid').setView([-34.921337, -57.954562], 12);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 32,
@@ -78,7 +78,7 @@ var greenIcon = L.icon({
     marker.bindPopup('<h1>Ushuaia - Home since 23 years old</h1>' +
         '<p>"Motto: Ushuaia, end of the world, beginning of everything.</p>' +
         '<p>It was regarded as the southernmost city in the world.</p>' +
-        '<p>Summers tend to be cloudy and windy, with maximum temperatures averaging y</p>' +
+        '<p>Summers tend to be cloudy and windy, with maximum temperatures averaging</p>' +
         '<p>around 14 °C (57 °F) during the da and about 5 °C (41 °F) at night"(Wikipedia).</p>' +
         '<img src = "ushuaia.jpg" width="300" height="200">').openPopup();
 
@@ -87,7 +87,7 @@ var greenIcon = L.icon({
         '<p>"La Plata is the capital city of Buenos Aires Province, Argentina.</p>' +
         '<p>According to the 2001 census, it has a population of 765,378 and its metropolitan area has 899,523 inhabitants.</p>' +
         '<p>It was officially founded by Governor Dardo Rocha on 19 November 1882" (Wikipedia).</p>' +
-        '<img src = "laplata.jpg"width="300" height="200">').openPopup();
+        '<img src = "laplata.jpg" width="250" height="200">').openPopup();
 
     var polygon = L.polygon([
     [-34.894353, -57.987143],
