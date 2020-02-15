@@ -13,8 +13,7 @@
 
 </head>
  <body>
-      <h1>Hometown - Danisa</h1>
-      <h2>Danisa Dolder - CEEN 514 - 02/20/2020</h2>
+      <h3>Hometown - Danisa</h3><h2>Danisa Dolder - CEEN 514 - 02/20/2020</h2>
       <h2>Assigment #7 - Build an Interactive Page with Leaflet Open Source Mapping API</h2>
       <div id="mapid"></div>
  </body>
@@ -55,17 +54,25 @@ var greenIcon = L.icon({
         '<img src = "facultad.jpg" width="300" height="200">').openPopup();
 
     var marker = L.marker([-34.908268, -57.943873], {icon: greenIcon}).addTo(mymap);
-    marker.bindPopup('<h1>Rafael Hernandez National College <br>- Highschool -</h1>' +
+    marker.bindPopup('<h1>Rafael Hernandez <br> National College <br>- Highschool -</h1>' +
         '<p>"The National College is one of the four public high schools that are part of the National University.</p>' +
         '<p>Originally, the college, founded by Joaquin V. Gonzalez, was reserved for boys.</p>' +
         '<p>It is considered one of the most prestigious secondary schools in Argentina" (Wikipedia).</p>' +
         '<img src = "nacional.jpg" width="300" height="200">').openPopup();
 
     var marker = L.marker([-34.894251, -57.987067], {icon: greenIcon}).addTo(mymap);
-    marker.bindPopup("Home since 9 until 23 years old").openPopup();
+    marker.bindPopup('<h1>Home since 9 to 23 years old</h1>' +
+        '<p>We moved there when I was 9 years old.</p>' +
+        '<p>My parents were building it for 4 years.</p>' +
+        '<p>They still live there.</p>' +
+        '<img src = "home2.jpg" width="300" height="200">').openPopup();
 
     var marker = L.marker([-34.936844, -57.946350], {icon: greenIcon}).addTo(mymap);
-    marker.bindPopup("Early Childhood Home").openPopup();
+    marker.bindPopup('<h1>Early Childhood Home</h1>' +
+        '<p>I lived there until I was 9 years old</p>' +
+        '<p>My parents bought a department in the second floor when they did not have kids.</p>' +
+        '<p>After having 5 kids, they decided to buy also one department in the first floor that was for sale.</p>' +
+        '<img src = "home1.jpg" width="300" height="200">').openPopup();
 
     var marker = L.marker([-34.921337, -57.954562], {icon: greenIcon}).addTo(mymap);
     marker.bindPopup("La Plata").openPopup();

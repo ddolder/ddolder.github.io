@@ -1,6 +1,12 @@
 h1 {
  font-family: impact, sans-serif;
-  font-size: 36px;
+  font-size: 24px;
+  text-align: center;
+ }
+
+ h3 {
+ font-family: impact, sans-serif;
+  font-size: 32px;
    margin-top: 5px;
   text-align: center;
  }
