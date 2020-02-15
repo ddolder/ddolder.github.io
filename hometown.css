@@ -4,24 +4,24 @@ h1 {
   text-align: center;
  }
 
- h3 {
- font-family: impact, sans-serif;
-  font-size: 32px;
-   margin-top: 5px;
-  text-align: center;
- }
-
  h2 {
  font-family:sans-serif;
   font-size: 20px;
   text-align: center;
 }
 
+ h3 {
+ font-family: impact, sans-serif;
+  font-size: 32px;
+   margin-top: 5px;
+  text-align: center;
+ }
+ 
 body {
         background-image: url("flag1.jpg");
          background-repeat: no-repeat;
         background-position: center top;
-         background-size: 1400px 150px;
+         background-size: 1400px 160px;
         margin: 0;
         padding: 0;
  }
