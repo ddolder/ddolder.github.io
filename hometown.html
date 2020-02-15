@@ -74,8 +74,20 @@ var greenIcon = L.icon({
         '<p>After having 5 kids, they decided to buy also one department in the first floor that was for sale.</p>' +
         '<img src = "home1.jpg" width="300" height="200">').openPopup();
 
+    var marker = L.marker([-54.817262, -68.333020], {icon: greenIcon}).addTo(mymap);
+    marker.bindPopup('<h1>Ushuaia - Home since 23 years old</h1>' +
+        '<p>"Motto: Ushuaia, end of the world, beginning of everything.</p>' +
+        '<p>It was regarded as the southernmost city in the world.</p>' +
+        '<p>Summers tend to be cloudy and windy, with maximum temperatures averaging y</p>' +
+        '<p>around 14 °C (57 °F) during the da and about 5 °C (41 °F) at night"(Wikipedia).</p>' +
+        '<img src = "ushuaia.jpg" width="300" height="200">').openPopup();
+
     var marker = L.marker([-34.921337, -57.954562], {icon: greenIcon}).addTo(mymap);
-    marker.bindPopup("La Plata").openPopup();
+    marker.bindPopup('<h1>La Plata City</h1>' +
+        '<p>"La Plata is the capital city of Buenos Aires Province, Argentina.</p>' +
+        '<p>According to the 2001 census, it has a population of 765,378 and its metropolitan area has 899,523 inhabitants.</p>' +
+        '<p>It was officially founded by Governor Dardo Rocha on 19 November 1882" (Wikipedia).</p>' +
+        '<img src = "laplata.jpg"width="300" height="200">').openPopup();
 
     var polygon = L.polygon([
     [-34.894353, -57.987143],
