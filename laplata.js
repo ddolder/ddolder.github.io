@@ -117,10 +117,9 @@
              var church1String = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        "<h1>La Plata 2nd Ward, La Plata Stake</h1>" +
-        '<p>My grandma was a widow and she cooked for the missionaries as a job.</p>' +
-        '<p>She was asked to cook also for the construction missionaries of this chapel as a service.</p>' +
-        '<p>This was the first chapel in La Plata. I got baptized in it.</p>' +
+        "<h1>La Plata 2nd Ward<br>La Plata Stake</h1>" + '<p>This was the first chapel in La Plata.</p>' +
+        '<p>My grandma cooked for the construction missionaries of this chapel as a service.</p>' +
+        '<p>I got baptized in it.</p>' +
         '<img src = "church1.jpg">';
         var church1Info = new google.maps.InfoWindow({
         content: church1String

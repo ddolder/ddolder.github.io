@@ -37,10 +37,14 @@ var greenIcon = L.icon({
 });
 
     var marker = L.marker([-34.906745, -57.954170], {icon: greenIcon}).addTo(mymap);
-    marker.bindPopup("Tolosa Ward, La Plata Stake").openPopup();
+    marker.bindPopup('<h1>Tolosa Ward<br> La Plata Stake</h1>' +
+    '<img src = "church.jpg" width="300" height="200">').openPopup();
 
     var marker = L.marker([-34.919533, -57.951040], {icon: greenIcon}).addTo(mymap);
-    marker.bindPopup("La Plata 2 Ward, La Plata Stake").openPopup();
+    marker.bindPopup('<h1>La Plata 2nd Ward<br>La Plata Stake</h1>' + '<p>This was the first chapel in La Plata.</p>' +
+        '<p>My grandma cooked for the construction missionaries of this chapel as a service.</p>' +
+        '<p>I got baptized in it.</p>' +
+        '<img src = "church1.jpg" width="300" height="200">').openPopup();
 
     var marker = L.marker([-34.907463, -57.944907], {icon: greenIcon}).addTo(mymap);
     marker.bindPopup("Faculty of Engineering UNLP").openPopup();
