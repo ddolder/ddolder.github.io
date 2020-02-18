@@ -25,3 +25,8 @@ body {
         margin: 0;
         padding: 0;
  }
+
+ .leaflet-popup-content-wrapper {
+  background-color:#007BA7;
+  color: white;
+}
