@@ -21,7 +21,7 @@
     var mymap = L.map('mapid').setView([-34.921337, -57.954562], 13);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 12,
+    maxZoom: 32,
     id: 'mapbox/streets-v11',
     accessToken: 'pk.eyJ1IjoiYWJoaXNoZWthbWFsMTgiLCJhIjoiY2s1eTVxNGExMmQ5MDNubjExaWY5MjdvbSJ9.3nmdjWZmUCDNyRdlPo5gbg'
 }).addTo(mymap);
@@ -89,8 +89,8 @@ var greenIcon = L.icon({
 ]).addTo(mymap);
 
 var circle = L.circle([-34.894251, -57.987067], {
-    color: 'red',
-    fillColor: '#f03',
+    color: '#007BA7',
+    fillColor: '#007BA7',
     fillOpacity: 0.5,
     radius: 800
 }).addTo(mymap);
