@@ -18,7 +18,7 @@
       <div id="mapid"></div>
  </body>
     <script>
-    var mymap = L.map('mapid').setView([-34.921337, -57.954562], 13);
+    var mymap = L.map('mapid').setView([-34.921337, -57.954562], 12);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 32,
@@ -77,7 +77,7 @@ var greenIcon = L.icon({
     var marker = L.marker([-34.921337, -57.954562]).addTo(mymap).bindPopup('<h1>La Plata City</h1>' +
         '"La Plata is the capital city of Buenos Aires Province, Argentina.<br>' +
         'According to the 2001 census, it has a population of 765,378 and its metropolitan area has 899,523 inhabitants.<br>' +
-        'It was officially founded by Governor Dardo Rocha on 19 November 1882" (Wikipedia).<br><br>' +
+        'It was officially founded by Governor Dardo Rocha on November 19, 1882" (Wikipedia).<br><br>' +
         '<img src = "laplata.jpg" width="300" height="250">');
 
     var polygon = L.polygon([
