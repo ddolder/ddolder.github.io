@@ -22,12 +22,12 @@ body {
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 1400px 160px;
-        background-color:#007BA7;
+        background-color:#76abdf;
         margin: 0;
         padding: 0;
  }
 
  .leaflet-popup-content-wrapper {
-  background-color:#007BA7;
+  background-color:#4685c3;
   color: white;
 }
