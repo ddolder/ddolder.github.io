@@ -1,0 +1,33 @@
+h1 {
+ font-family: sans-serif;
+  font-size: 22px;
+  text-align: center;
+ }
+
+ h2 {
+ font-family:sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+ h3 {
+ font-family: impact, sans-serif;
+  font-size: 32px;
+   margin-top: 5px;
+  text-align: center;
+ }
+
+body {
+        background-image: url("flag1.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 1800px 160px;
+        background-color:#76abdf;
+        margin: 0;
+        padding: 0;
+ }
+
+ .leaflet-popup-content-wrapper {
+  background-color:#4685c3;
+  color: white;
+}
