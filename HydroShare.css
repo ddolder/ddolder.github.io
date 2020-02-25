@@ -19,3 +19,9 @@ body {
  padding: 0;
  }
 
+ .leaflet-popup-content-wrapper {
+  background-color:black;
+  color: white;
+   text-align: center;
+}
+
